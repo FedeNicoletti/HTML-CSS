@@ -1,0 +1,17 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+.galeria{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imagen-galeria{    
+    height: 300px;
+    width: 300px;
+}
