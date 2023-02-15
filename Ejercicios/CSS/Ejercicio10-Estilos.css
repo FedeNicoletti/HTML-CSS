@@ -6,19 +6,24 @@ body {
 }
 
 .nav {
+  display: flex;
   background-color: aqua;
   flex-direction: column;
-  align-self: flex-start;
-  flex-grow: 3;
+  padding: 0.5rem;
 }
 .main {
   background-color: bisque;
   flex-grow: 1;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 @media (max-width: 640px) {
+  body {
+    flex-direction: column-reverse;
+  }
   .nav {
     flex-direction: row;
-    align-self: end;
+    justify-content: space-evenly;
   }
 }
