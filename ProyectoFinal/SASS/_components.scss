@@ -1,0 +1,44 @@
+$color-main: #0075ff;
+@mixin btn-base {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+}
+.btn-main {
+  @include btn-base();
+  background-color: $color-main;
+  color: white;
+  border: solid 1px $color-main;
+
+  &:hover {
+    background-color: white;
+    color: $color-main;
+  }
+}
+.btn-sec {
+  @include btn-base();
+  background-color: transparent;
+  color: black;
+  border: none;
+
+  &:hover {
+    color: #888;
+  }
+}
+.main-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-item{
+  padding: 0.75rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+.icon-sm i{
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
+  color: $color-main;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
